@@ -12,11 +12,27 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/button1"
                 android:text="跳转到时钟控件页面"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+            <Button
+                android:id="@+id/button2"
+                android:text="跳转到图层控件页面"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+            <Button
+                android:id="@+id/button3"
+                android:text="跳转到我的绘画板页面"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+            <Button
+                android:id="@+id/button4"
+                android:text="跳转到我的正旋曲线页面"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"/>
 

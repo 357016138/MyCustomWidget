@@ -21,19 +21,18 @@ public class Clock extends View {
         super(context, attrs, defStyleAttr);
     }
 
-
     @Override
     protected void onDraw(Canvas canvas) {
 
         int mWidth = getMeasuredWidth();
         int mHeight = getMeasuredHeight();
 
-        Paint paintCircle = new Paint();
+        Paint paintCircle = new Paint(Paint.ANTI_ALIAS_FLAG);
         paintCircle.setStyle(Paint.Style.STROKE);
         paintCircle.setStrokeWidth(5);
         canvas.drawCircle(mWidth / 2, mHeight / 2, mWidth / 2, paintCircle);
 
-        Paint paintDegree = new Paint();
+        Paint paintDegree = new Paint(Paint.ANTI_ALIAS_FLAG);
         paintCircle.setStrokeWidth(3);
 
         for (int i=0;i<12;i++){
@@ -81,7 +80,6 @@ public class Clock extends View {
         canvas.drawLine(mWidth / 2, mHeight / 2,mWidth / 2+100,mHeight / 2+200,paintMinute);
 
         canvas.save();
-
 
     }
 }
